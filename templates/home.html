@@ -1,18 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Auto Price AI</title>
+    <title>AutoPrice AI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-    <h1>Auto Price AI</h1>
+<div class="container">
 
-    <p>Vehicle Price Prediction Platform</p>
+    <header class="site-header">
+        <div class="logo">
+            <span class="gold">Auto</span>Price AI
+        </div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/predict">Preis vorhersagen</a>
+            <a href="/contact">Kontakt</a>
+        </nav>
+    </header>
+    
+    <section class="hero-home">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+            <h1 class="hero-title">
+                Intelligente
+                <span class="gold">
+                    Fahrzeugpreisprognose
+                </span>
+            </h1>
+
+            <p class="hero-text">
+                Vorhersage von Fahrzeugpreisen mithilfe von
+                Machine Learning und historischen Marktdaten.
+            </p>
+
+            <a href="/predict" class="btn btn-gold btn-lg">
+                Preis vorhersagen
+            </a>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+            <img
+                src="{{ url_for('static', filename='images/bugatti.png') }}"
+                class="img-fluid hero-car">
+
+        </div>
+
+    </div>
+
+</section>
+<section class="stats-section">
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2 class="gold">50K+</h2>
+                <p>Fahrzeuge analysiert</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2 class="gold">98%</h2>
+                <p>Vorhersagegenauigkeit</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2 class="gold">100%</h2>
+                <p>Sichere Datenverarbeitung</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2 class="gold">24/7</h2>
+                <p>Schnelle Ergebnisse</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="about-section">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-5">
+            <div class="about-image-box">
+                <img src="{{ url_for('static', filename='images/Benz.png') }}" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+
+            <h2 class="gold mb-4">
+                Über uns
+            </h2>
+
+            <p>
+                AutoPrice AI ist eine intelligente Plattform zur Schätzung von Fahrzeugpreisen
+                mithilfe von Machine Learning.
+            </p>
+
+            <p>
+                Unser System analysiert wichtige Fahrzeugmerkmale wie Marke, Modell,
+                Kraftstoffart, Getriebe, Hubraum, Kundenzufriedenheit, Verkaufszahlen,
+                Bundesland und zeitliche Marktfaktoren.
+            </p>
+
+            <p>
+                Die Preisvorhersage basiert auf einem Random-Forest-Modell,
+                das mit historischen Fahrzeugdaten trainiert wurde.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <p>AutoPrice AI © 2026</p>
+    <p>Machine Learning Vehicle Valuation Platform</p>
+</footer>
+
+</div>
 
 </body>
-<nav>
-    <a href="/">Home</a> |
-    <a href="/predict">Predict Price</a> |
-    <a href="/contact">Contact</a>
-</nav>
 </html>
