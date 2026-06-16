@@ -3,3 +3,6 @@ gunicorn
 pandas
 scikit-learn
 numpy
+joblib
+openai
+python-dotenv

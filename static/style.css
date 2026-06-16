@@ -158,3 +158,48 @@ body{
     text-align:center;
     color:#aaaaaa;
 }
+.contact-hero{
+    text-align:center;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.contact-title{
+    font-size:90px;
+    font-weight:800;
+    color:#d4af37;
+    letter-spacing:6px;
+}
+
+.contact-subtitle{
+    font-size:28px;
+    color:#dddddd;
+    max-width:900px;
+    margin:auto;
+}
+.contact-content{
+    margin-bottom:80px;
+}
+
+.contact-card{
+    background:#111;
+    border:1px solid rgba(212,175,55,.45);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 0 25px rgba(212,175,55,.08);
+}
+
+.support-item{
+    margin-bottom:30px;
+    padding-left:10px;
+}
+
+.support-item h5{
+    color:white;
+    font-weight:700;
+}
+
+.support-item p{
+    color:#cccccc;
+    margin-bottom:0;
+}
